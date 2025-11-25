@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubunut-linux
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -24,7 +24,7 @@ jobs:
 
   deploy:
     needs: build-and-push
-    runs-on: ubunut-linux
+    runs-on: ubuntu-latest
     steps:
       - name: Set up SSH
         run: |
